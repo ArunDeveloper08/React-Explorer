@@ -8,6 +8,7 @@ const Explorer = ({ data }) => {
     <div>
       <p
        onClick={()=>isExpand(!expand)}
+       style={{cursor:'pointer', display:"flex", alignItems:"center"}}
       >
         { data.isFolder ?expand ? <AiOutlineCaretDown /> : <AiOutlineCaretRight  />: null}
         {data.name}
